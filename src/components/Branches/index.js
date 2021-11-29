@@ -12,6 +12,7 @@ export default class Branches extends Component {
 
   getBranches = async (event) => {
     const jwtToken = Cookies.get("jwt_token");
+    console.log(jwtToken);
     const branchesUrl =
       "http://testing-intern-api.herokuapp.com/api/branch/branches";
     const options = {
